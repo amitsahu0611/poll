@@ -15,19 +15,33 @@ const Navbar = () => {
 
           {/* Navigation Buttons */}
           <div className="hidden md:flex space-x-4">
-            <button className="px-4 py-2 text-black hover:bg-gray-100 font-semibold hover:back rounded">
-              <Link to="/view-polls">View Polls</Link>
-            </button>
-            <button className="px-4 py-2 text-black hover:bg-gray-100 font-semibold hover:back rounded">
-              <Link to="/leaderboard">Leaderboard</Link>
-            </button>
-            <button className="px-4 py-2 text-black hover:bg-gray-100 font-semibold hover:back rounded">
-              <Link to="/credit-point">Manage Credits</Link>
-            </button>
+            <Link
+              to="/view-polls"
+              className="px-4 py-2 text-black hover:bg-gray-100 font-semibold hover:back rounded"
+            >
+              View Polls
+            </Link>
 
-            <button className="px-4 py-2 text-black font-semibold border bg-gray-100  rounded">
-              <Link to="/create-poll">Create Poll</Link>
-            </button>
+            <Link
+              to="/leaderboard"
+              className="px-4 py-2 text-black hover:bg-gray-100 font-semibold hover:back rounded"
+            >
+              Leaderboard
+            </Link>
+
+            <Link
+              to="/credit-point"
+              className="px-4 py-2 text-black hover:bg-gray-100 font-semibold hover:back rounded"
+            >
+              Manage Credits
+            </Link>
+
+            <Link
+              to="/create-poll"
+              className="px-4 py-2 text-black hover:bg-gray-100 font-semibold hover:back rounded"
+            >
+              Create Poll
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}

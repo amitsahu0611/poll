@@ -81,7 +81,8 @@ export const manageCredits = createAsyncThunk(
         `${API_URI}/api/user/modifyCredits`,
         data
       );
-      if (response.success === true) {
+      console.log("response ----", response);
+      if (response.status === 201) {
         SuccessMsg({ msg: "Credit updated successfully." });
       } else if (response.success === false) {
         ErrorMsg({ msg: response.message });
