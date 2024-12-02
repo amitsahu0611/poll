@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -18,6 +18,7 @@ const Navbar = () => {
             <Link
               to="/view-polls"
               className="px-4 py-2 text-black hover:bg-gray-100 font-semibold hover:back rounded"
+               activeClassName="bg-blue-500 text-white"
             >
               View Polls
             </Link>
